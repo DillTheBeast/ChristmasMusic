@@ -20,7 +20,7 @@ import javax.swing.Action;
 
 public class Controller implements Initializable {
 
-    //All of the song buttons + Play/Pause Button + Previous Button + Next Button
+    //All of the song buttons + Play/Pause Button
     @FXML
     private Button Button0;
     @FXML
@@ -53,10 +53,6 @@ public class Controller implements Initializable {
     private Button playButton;
     @FXML
     private Button pauseButton;
-    @FXML
-    private Button previousButton;
-    @FXML
-    private Button nextButton;
 
     @FXML
     private Label songLabel;
@@ -64,9 +60,6 @@ public class Controller implements Initializable {
     private File directory;
     private File[] files;
     private ArrayList<File> songs;
-    private int songumber;
-    private Timer timer;
-    private TimerTask task;
     private boolean running; 
     private Media media;
     private MediaPlayer mediaPlayer;
@@ -74,8 +67,41 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
+
+    }
+    @FXML
+    void playSong(ActionEvent event) {
+        mediaPlayer.play();
+    }
+    @FXML
+    void pauseSong(ActionEvent event) {
+        mediaPlayer.pause(); 
+    }
+
+    @FXML
+    void onplaySong1(ActionEvent event) {
         songs = new ArrayList<File>();
-        directory = new File("music"); 
+        directory = new File("music1"); 
+        files = directory.listFiles();
+
+        if(files != null) {
+            for(File file : files) {
+                songs.add(file); 
+            }
+        }
+
+        //Code for music 2 - 13 does not work at this line for each folder
+        media = new Media(songs.get(songNumber).toURI().toString());
+        mediaPlayer = new MediaPlayer(media);
+
+        songLabel.setText(songs.get(songNumber).getName());
+
+        mediaPlayer.play();
+    }
+    @FXML
+    void onplaySong2(ActionEvent event) {
+        songs = new ArrayList<File>();
+        directory = new File("music2"); 
         files = directory.listFiles();
 
         if(files != null) {
@@ -88,18 +114,235 @@ public class Controller implements Initializable {
         mediaPlayer = new MediaPlayer(media);
 
         songLabel.setText(songs.get(songNumber).getName());
-    }
 
-    public void playSong() {
         mediaPlayer.play();
     }
-    public void pauseSong() {
+    @FXML
+    void onplaySong3(ActionEvent event) {
+        songs = new ArrayList<File>();
+        directory = new File("music3"); 
+        files = directory.listFiles();
 
+        if(files != null) {
+            for(File file : files) {
+                songs.add(file); 
+            }
+        }
+
+        media = new Media(songs.get(songNumber).toURI().toString());
+        mediaPlayer = new MediaPlayer(media);
+
+        songLabel.setText(songs.get(songNumber).getName());
+
+        mediaPlayer.play();
     }
-    public void nextSong() {
+    @FXML
+    void onplaySong4(ActionEvent event) {
+        songs = new ArrayList<File>();
+        directory = new File("music4"); 
+        files = directory.listFiles();
 
+        if(files != null) {
+            for(File file : files) {
+                songs.add(file); 
+            }
+        }
+
+        media = new Media(songs.get(songNumber).toURI().toString());
+        mediaPlayer = new MediaPlayer(media);
+
+        songLabel.setText(songs.get(songNumber).getName());
+
+        mediaPlayer.play();
     }
-    public void previousSong() {
+    @FXML
+    void onplaySong5(ActionEvent event) {
+        songs = new ArrayList<File>();
+        directory = new File("music5"); 
+        files = directory.listFiles();
 
+        if(files != null) {
+            for(File file : files) {
+                songs.add(file); 
+            }
+        }
+
+        media = new Media(songs.get(songNumber).toURI().toString());
+        mediaPlayer = new MediaPlayer(media);
+
+        songLabel.setText(songs.get(songNumber).getName());
+
+        mediaPlayer.play();
+    }
+    @FXML
+    void onplaySong6(ActionEvent event) {
+        songs = new ArrayList<File>();
+        directory = new File("music6"); 
+        files = directory.listFiles();
+
+        if(files != null) {
+            for(File file : files) {
+                songs.add(file); 
+            }
+        }
+
+        media = new Media(songs.get(songNumber).toURI().toString());
+        mediaPlayer = new MediaPlayer(media);
+
+        songLabel.setText(songs.get(songNumber).getName());
+
+        mediaPlayer.play();
+    }
+    @FXML
+    void onplaySong7(ActionEvent event) {
+        songs = new ArrayList<File>();
+        directory = new File("music7"); 
+        files = directory.listFiles();
+
+        if(files != null) {
+            for(File file : files) {
+                songs.add(file); 
+            }
+        }
+
+        media = new Media(songs.get(songNumber).toURI().toString());
+        mediaPlayer = new MediaPlayer(media);
+
+        songLabel.setText(songs.get(songNumber).getName());
+
+        mediaPlayer.play();
+    }
+    @FXML
+    void onplaySong8(ActionEvent event) {
+        songs = new ArrayList<File>();
+        directory = new File("music8"); 
+        files = directory.listFiles();
+
+        if(files != null) {
+            for(File file : files) {
+                songs.add(file); 
+            }
+        }
+
+        media = new Media(songs.get(songNumber).toURI().toString());
+        mediaPlayer = new MediaPlayer(media);
+
+        songLabel.setText(songs.get(songNumber).getName());
+
+        mediaPlayer.play();
+    }
+    @FXML
+    void onplaySong9(ActionEvent event) {
+        songs = new ArrayList<File>();
+        directory = new File("music9"); 
+        files = directory.listFiles();
+
+        if(files != null) {
+            for(File file : files) {
+                songs.add(file); 
+            }
+        }
+
+        media = new Media(songs.get(songNumber).toURI().toString());
+        mediaPlayer = new MediaPlayer(media);
+
+        songLabel.setText(songs.get(songNumber).getName());
+
+        mediaPlayer.play();
+    }
+    @FXML
+    void onplaySong10(ActionEvent event) {
+        songs = new ArrayList<File>();
+        directory = new File("music10"); 
+        files = directory.listFiles();
+
+        if(files != null) {
+            for(File file : files) {
+                songs.add(file); 
+            }
+        }
+
+        media = new Media(songs.get(songNumber).toURI().toString());
+        mediaPlayer = new MediaPlayer(media);
+
+        songLabel.setText(songs.get(songNumber).getName());
+
+        mediaPlayer.play();
+    }
+    @FXML
+    void onplaySong11(ActionEvent event) {
+        songs = new ArrayList<File>();
+        directory = new File("music11"); 
+        files = directory.listFiles();
+
+        if(files != null) {
+            for(File file : files) {
+                songs.add(file); 
+            }
+        }
+
+        media = new Media(songs.get(songNumber).toURI().toString());
+        mediaPlayer = new MediaPlayer(media);
+
+        songLabel.setText(songs.get(songNumber).getName());
+
+        mediaPlayer.play();
+    }
+    @FXML
+    void onplaySong12(ActionEvent event) {
+        songs = new ArrayList<File>();
+        directory = new File("music12"); 
+        files = directory.listFiles();
+
+        if(files != null) {
+            for(File file : files) {
+                songs.add(file); 
+            }
+        }
+
+        media = new Media(songs.get(songNumber).toURI().toString());
+        mediaPlayer = new MediaPlayer(media);
+
+        songLabel.setText(songs.get(songNumber).getName());
+
+        mediaPlayer.play();
+    }
+    @FXML
+    void onplaySong13(ActionEvent event) {
+        songs = new ArrayList<File>();
+        directory = new File("music13"); 
+        files = directory.listFiles();
+
+        if(files != null) {
+            for(File file : files) {
+                songs.add(file); 
+            }
+        }
+
+        media = new Media(songs.get(songNumber).toURI().toString());
+        mediaPlayer = new MediaPlayer(media);
+
+        songLabel.setText(songs.get(songNumber).getName());
+
+        mediaPlayer.play();
+    }
+    @FXML
+    void onplaySong14(ActionEvent event) {
+        songs = new ArrayList<File>();
+        directory = new File("music14"); 
+        files = directory.listFiles();
+
+        if(files != null) {
+            for(File file : files) {
+                songs.add(file); 
+            }
+        }
+
+        media = new Media(songs.get(songNumber).toURI().toString());
+        mediaPlayer = new MediaPlayer(media);
+
+        songLabel.setText(songs.get(songNumber).getName());
+
+        mediaPlayer.play();
     }
 }

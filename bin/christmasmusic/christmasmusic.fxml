@@ -12,23 +12,21 @@
             <Font size="27.0" />
          </font>
       </Label>
-      <Button fx:id="Button4" layoutX="14.0" layoutY="239.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="197.0" text="All I Want for Christmas is You" wrapText="true" />
-      <Button fx:id="Button6" layoutX="14.0" layoutY="329.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="197.0" text="Deck the Hall" />
-      <Button fx:id="Button5" layoutX="14.0" layoutY="284.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="197.0" text="Holy Joly Christmas" />
-      <Button fx:id="Button0" layoutX="14.0" layoutY="59.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="197.0" text="It's Beginning to Look a Lot Like Christmas" wrapText="true" />
-      <Button fx:id="Button3" layoutX="14.0" layoutY="194.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="197.0" text="We Wish You a Merry Christmas" wrapText="true" />
-      <Button fx:id="Button2" layoutX="14.0" layoutY="149.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="197.0" text="Rockin Around the Christmas Tree" wrapText="true" />
-      <Button fx:id="Button1" layoutX="14.0" layoutY="104.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="197.0" text="Last Christmas" />
-      <Button fx:id="Button9" layoutX="211.0" layoutY="149.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="197.0" text="Santa Claus is Coming to Town" />
-      <Button fx:id="Button10" layoutX="211.0" layoutY="194.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="197.0" text="Rudolph the Red Nosed Reindeer " wrapText="true" />
-      <Button fx:id="Button7" layoutX="211.0" layoutY="59.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="197.0" text="Jingle Bell" />
-      <Button fx:id="Button11" layoutX="211.0" layoutY="239.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="197.0" text="Let it Snow" />
-      <Button fx:id="Button8" layoutX="211.0" layoutY="104.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="197.0" text="Jingle Bell Rock" />
-      <Button fx:id="Button13" layoutX="211.0" layoutY="329.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="197.0" text="Feliz Navidad" />
-      <Button fx:id="Button12" layoutX="211.0" layoutY="284.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="197.0" text="Santa Baby" />
-      <Button fx:id="playButton" layoutX="419.0" layoutY="57.0" mnemonicParsing="false" onAction="#playSong" prefHeight="80.0" prefWidth="170.0" text="Play" />
-      <Button fx:id="previousButton" layoutX="419.0" layoutY="217.0" mnemonicParsing="false" onAction="#previousSong" prefHeight="80.0" prefWidth="170.0" text="Previous" />
-      <Button fx:id="pauseButton" layoutX="419.0" layoutY="137.0" mnemonicParsing="false" onAction="#pauseSong" prefHeight="80.0" prefWidth="170.0" text="Pause" />
-      <Button fx:id="nextButton" layoutX="419.0" layoutY="294.0" mnemonicParsing="false" onAction="#nextSong" prefHeight="80.0" prefWidth="170.0" text="Next" />
+      <Button fx:id="Button4" layoutX="14.0" layoutY="239.0" mnemonicParsing="false" onAction="#onplaySong5" prefHeight="45.0" prefWidth="197.0" text="All I Want for Christmas is You" wrapText="true" />
+      <Button fx:id="Button6" layoutX="14.0" layoutY="329.0" mnemonicParsing="false" onAction="#onplaySong7" prefHeight="45.0" prefWidth="197.0" text="Deck the Hall" />
+      <Button fx:id="Button5" layoutX="14.0" layoutY="284.0" mnemonicParsing="false" onAction="#onplaySong6" prefHeight="45.0" prefWidth="197.0" text="Holy Joly Christmas" />
+      <Button fx:id="Button0" layoutX="14.0" layoutY="59.0" mnemonicParsing="false" onAction="#onplaySong1" prefHeight="45.0" prefWidth="197.0" text="It's Beginning to Look a Lot Like Christmas" wrapText="true" />
+      <Button fx:id="Button3" layoutX="14.0" layoutY="194.0" mnemonicParsing="false" onAction="#onplaySong4" prefHeight="45.0" prefWidth="197.0" text="We Wish You a Merry Christmas" wrapText="true" />
+      <Button fx:id="Button2" layoutX="14.0" layoutY="149.0" mnemonicParsing="false" onAction="#onplaySong3" prefHeight="45.0" prefWidth="197.0" text="Rockin Around the Christmas Tree" wrapText="true" />
+      <Button fx:id="Button1" layoutX="14.0" layoutY="104.0" mnemonicParsing="false" onAction="#onplaySong2" prefHeight="45.0" prefWidth="197.0" text="Last Christmas" />
+      <Button fx:id="Button9" layoutX="211.0" layoutY="149.0" mnemonicParsing="false" onAction="#onplaySong10" prefHeight="45.0" prefWidth="197.0" text="Santa Claus is Coming to Town" />
+      <Button fx:id="Button10" layoutX="211.0" layoutY="194.0" mnemonicParsing="false" onAction="#onplaySong11" prefHeight="45.0" prefWidth="197.0" text="Rudolph the Red Nosed Reindeer " wrapText="true" />
+      <Button fx:id="Button7" layoutX="211.0" layoutY="59.0" mnemonicParsing="false" onAction="#onplaySong8" prefHeight="45.0" prefWidth="197.0" text="Jingle Bell" />
+      <Button fx:id="Button11" layoutX="211.0" layoutY="239.0" mnemonicParsing="false" onAction="#onplaySong12" prefHeight="45.0" prefWidth="197.0" text="Let it Snow" />
+      <Button fx:id="Button8" layoutX="211.0" layoutY="104.0" mnemonicParsing="false" onAction="#onplaySong9" prefHeight="45.0" prefWidth="197.0" text="Jingle Bell Rock" />
+      <Button fx:id="Button13" layoutX="211.0" layoutY="329.0" mnemonicParsing="false" onAction="#onplaySong14" prefHeight="45.0" prefWidth="197.0" text="Feliz Navidad" />
+      <Button fx:id="Button12" layoutX="211.0" layoutY="284.0" mnemonicParsing="false" onAction="#onplaySong13" prefHeight="45.0" prefWidth="197.0" text="Santa Baby" />
+      <Button fx:id="playButton" layoutX="419.0" layoutY="57.0" mnemonicParsing="false" onAction="#playSong" prefHeight="154.0" prefWidth="170.0" text="Play" />
+      <Button fx:id="pauseButton" layoutX="419.0" layoutY="220.0" mnemonicParsing="false" onAction="#pauseSong" prefHeight="154.0" prefWidth="170.0" text="Pause" />
    </children>
 </AnchorPane>
